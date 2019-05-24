@@ -1,0 +1,114 @@
+/* reset */
+html,
+body {
+	font-size: 16px;
+	margin: 0;
+}
+
+.calculator {
+	width: fit-content;
+}
+
+/* component */
+button {
+	width: 4rem;
+	height: 3rem;
+	margin: .2rem;
+	background-color: #eee;
+	border: none;
+	outline: none;
+}
+
+button:hover {
+	box-shadow: 1px 1px 2px #aaa;
+}
+
+.operator button {
+	background-color: #d7e6f7;
+}
+
+#enter {
+	background-color: #f9d3d3;
+}
+
+
+/* layout */
+.showing {
+	border: 1px solid #999;
+	padding: .5rem;
+	margin: 1rem .2rem;
+	text-align: right;
+}
+
+.showing p.ans {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.number {
+	width: calc(4rem * 3 + .2rem * 6);
+	display: inline-flex;
+	flex-wrap: wrap;
+	vertical-align: top;
+}
+
+.operator {
+	width: calc(4rem + .2rem * 2);
+	display: inline-block;
+}
+
+
+
+
+
+/* phone vertical */
+@media (max-width: 479px) {
+	h2 {
+		text-align: center;
+	}
+	.calculator {
+		width: 100vw;
+		position: absolute;
+		bottom: 3rem;
+	}
+
+	button {
+		width: 24vw;
+		margin: .5vw;
+		height: 15vh;
+		font-size: 1.5rem;
+	}
+
+	.showing {
+		padding: 1rem;
+	}
+
+	.showing small.calc {
+		font-size: 1.5rem;
+	}
+
+	.showing p.ans {
+		font-size: 1.8rem;
+	}
+
+	.number {
+		width: calc(25vw * 3);
+		margin-right: -6px; /* fix spacing */
+	}
+
+	.operator {
+		width: 25vw;
+	}
+}
+/* phone horizontal, pad vertical */
+@media (min-width: 480px) and (max-width: 767px) {
+}
+/* pad horizontal */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+/* pc small screen */
+@media (min-width: 980px) and (max-width: 1199px) {
+}
+/* pc large screen */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Calculator Demo</title>
+
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+	<h2>Calculator</h2>
+	<div class="calculator">
+		<div class="showing">
+			<small class="calc"></small>
+			<p class="ans"></p>
+		</div>
+
+		<div class="number">
+			<button onclick="pushItem('7')">7</button>
+			<button onclick="pushItem('8')">8</button>
+			<button onclick="pushItem('9')">9</button>
+			<button onclick="pushItem('4')">4</button>
+			<button onclick="pushItem('5')">5</button>
+			<button onclick="pushItem('6')">6</button>
+			<button onclick="pushItem('1')">1</button>
+			<button onclick="pushItem('2')">2</button>
+			<button onclick="pushItem('3')">3</button>
+			<button onclick="pushItem('0')">0</button>
+			<button onclick="pushItem('.')">.</button>
+			<button onclick="calcAns()" id="enter">=</button>
+		</div>
+
+		<div class="operator">
+			<button onclick="pushItem('+')">+</button>
+			<button onclick="pushItem('-')">-</button>
+			<button onclick="pushItem('*')">*</button>
+			<button onclick="pushItem('/')">/</button>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
