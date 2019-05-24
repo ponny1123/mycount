@@ -1,114 +1,72 @@
-/* reset */
-html,
-body {
-	font-size: 16px;
-	margin: 0;
-}
-
-.calculator {
-	width: fit-content;
-}
-
-/* component */
-button {
-	width: 4rem;
-	height: 3rem;
-	margin: .2rem;
-	background-color: #eee;
-	border: none;
-	outline: none;
-}
-
-button:hover {
-	box-shadow: 1px 1px 2px #aaa;
-}
-
-.operator button {
-	background-color: #d7e6f7;
-}
-
-#enter {
-	background-color: #f9d3d3;
-}
-
-
-/* layout */
-.showing {
-	border: 1px solid #999;
-	padding: .5rem;
-	margin: 1rem .2rem;
-	text-align: right;
-}
-
-.showing p.ans {
-	margin: 0;
-	font-size: 1.5rem;
-}
-
-.number {
-	width: calc(4rem * 3 + .2rem * 6);
-	display: inline-flex;
-	flex-wrap: wrap;
-	vertical-align: top;
-}
-
-.operator {
-	width: calc(4rem + .2rem * 2);
-	display: inline-block;
-}
-
-
-
-
-
-/* phone vertical */
-@media (max-width: 479px) {
-	h2 {
-		text-align: center;
-	}
-	.calculator {
-		width: 100vw;
-		position: absolute;
-		bottom: 3rem;
-	}
-
-	button {
-		width: 24vw;
-		margin: .5vw;
-		height: 15vh;
-		font-size: 1.5rem;
-	}
-
-	.showing {
-		padding: 1rem;
-	}
-
-	.showing small.calc {
-		font-size: 1.5rem;
-	}
-
-	.showing p.ans {
-		font-size: 1.8rem;
-	}
-
-	.number {
-		width: calc(25vw * 3);
-		margin-right: -6px; /* fix spacing */
-	}
-
-	.operator {
-		width: 25vw;
-	}
-}
-/* phone horizontal, pad vertical */
-@media (min-width: 480px) and (max-width: 767px) {
-}
-/* pad horizontal */
-@media (min-width: 768px) and (max-width: 979px) {
-}
-/* pc small screen */
-@media (min-width: 980px) and (max-width: 1199px) {
-}
-/* pc large screen */
-@media (min-width: 1200px) {
-}
+body{
+	background:#000;  
+  }
+  
+  #calculator{
+	width:300px; 
+	background:#505050;
+	margin:10px auto;
+	font-family:Arial;
+	overflow:hidden;
+  }
+  
+  .screen{
+	height:70px; 
+	width:95%; 
+	color:#F0F0F0;
+	font-size:50px; 
+	line-height:70px; 
+	text-align:right;
+	overflow:hidden;
+	padding:5px;
+	
+  
+  }
+  
+  
+  #keypad li{
+	list-style-type:none;
+	width:25%;
+	height:70px;
+	background:#E0E0E0 ;
+	float:left;
+	text-align:center;
+	line-height:70px;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+	 box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border:1px solid #000000;
+	
+  }
+  #keypad .extend{
+	width:50%; 
+  
+  }
+  #keypad .symbol{
+	background:#fba01f; 
+	color:white; 
+	font-size:30px;
+	border-right:none;
+  }
+  #keypad .symbolTop{
+	background:#B8B8B8; 
+	color:white; 
+	font-size:30px;
+  }
+  
+  .active{
+	
+	 -moz-box-shadow:    inset 0 0 5px #000000;
+	 -webkit-box-shadow: inset 0 0 5px #000000;
+	 box-shadow:         inset 0 0 5px #000000;
+  
+  }
+  
+  
+  
+  
+  
